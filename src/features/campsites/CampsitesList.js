@@ -9,8 +9,8 @@ const CampsitesList = ({ setCampsiteId }) => {
         <Row className='ms-auto'>
             {campsites.map((campsite) => {
                 return (
-                    <Col sm='12'
-                        xxl='5'
+                    <Col 
+                        md='5'
                         className='mt-4'
                         key={campsite.id}
                         onClick={() => setCampsiteId(campsite.id)}>

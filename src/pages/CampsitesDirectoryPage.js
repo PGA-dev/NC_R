@@ -17,10 +17,10 @@ const CampsitesDirectoryPage = () => {
     return (
         <Container>
             <Row>
-                <Col sm='12' md='12' lg='9' xl='9' xxl='9'>
+                <Col sm='5' md='7'>
                 <CampsitesList setCampsiteId={setCampsiteId} />
                 </Col>
-                <Col sm='12' md='12' lg='3' xl='3' xxl='3'>
+                <Col sm='7' md='5'>
                     <CampsiteDetail campsite={selectedCampsite} />
                 </Col>
             </Row>
