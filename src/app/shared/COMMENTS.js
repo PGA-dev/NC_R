@@ -163,7 +163,7 @@ export const COMMENTS = [
         id: 20,
         campsiteId: 3,
         rating: 1.2,
-        text: "This place sucks, the photos are fake darnit", 
+        text: "This place sucks, the photos are fake darnit; some sort of silly computer learning project...", 
         author: 'PGA',
         date: '2023-01-11T10:46Z'
     }
