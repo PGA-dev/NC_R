@@ -158,5 +158,13 @@ export const COMMENTS = [
         text: "The photos don't do justice to the beauty of this place.",
         author: 'Minae Lee',
         date: '2019-02-18T18:12Z'
+    },
+    {
+        id: 20,
+        campsiteId: 3,
+        rating: 1.2,
+        text: "This place sucks, the photos are fake darnit", 
+        author: 'PGA',
+        date: '2023-01-11T10:46Z'
     }
 ];
