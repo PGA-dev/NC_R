@@ -12,10 +12,8 @@ const Partner = ({partner}) => {
                 </div>
             </>
         );
-       
     } return null;
-
-}
+};
 
 
 export default Partner;
