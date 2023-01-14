@@ -24,7 +24,7 @@ const AboutPage = () => {
                     <Card>
                         <CardHeader className='bg-primary text-white'>
                             <h3>
-                                Facts at a Glance
+                                Facts at a Glance...Look Away
                             </h3>
                         </CardHeader>
                         <CardBody>
