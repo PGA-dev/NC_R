@@ -69,8 +69,8 @@ const AboutPage = () => {
                 <PartnersList />
             </Row>
         </Container>
-    )
-}
+    );
+};
 
 
 

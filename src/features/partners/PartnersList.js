@@ -15,7 +15,7 @@ const PartnersList = () => {
             })}
         </Col>
     );
-}
+};
 
 
 
