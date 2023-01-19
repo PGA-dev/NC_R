@@ -15,13 +15,14 @@ export const validateContactForm = (values) => {
         errors.lastName = 'The Last name should be in the the Xxxx format...2-15 chars';
     }
 
-    //Email
 
-    const regPh = /^([1]?)[-]?([\d]{3})[-]?([\d]{3})[-]?([\d]{4})$/;
+    // Phone
+    const regPh = /^([\(]?)([1]?)([-]?)([\d]{3})([\)]?)([-]?)([\d]{3})([-]?)([\d]{4})$/; //my 9 group approach
     if (!regPh.test(values.phoneNum)) {
         errors.phoneNum = 'The phone number should be formatted as 10-11 digits, area code and prefix optional ';
     }
-    // Phone
+
+    //Email
     const regE = /^(\w)+([\.-]?\w+)*(@)([\w]+)([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regE.test(values.email)) {
         errors.email = 'Email improperly formated -- please use: xxxxxx@xxxx.xxx';
