@@ -88,6 +88,9 @@ const ContactForm = () => {
                 </Label>
                 <Col md='10'>
                     <Field className='form-control' name='feedback' as='textarea' rows='12' />
+                    <ErrorMessage name='feedback'>
+                        {(msg) => <p className='text-danger'>{msg}</p>}
+                    </ErrorMessage>
                 </Col>
             </FormGroup>
             <FormGroup row>
