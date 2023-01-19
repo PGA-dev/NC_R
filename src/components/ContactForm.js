@@ -19,6 +19,7 @@ const ContactForm = () => {
                     First Name
                 </Label>
                 <Col md='10'>
+                    <Field className='form-control' name='firstName' placeholder='FirstName' />
                 </Col>
             </FormGroup>
             <FormGroup row>
@@ -26,6 +27,7 @@ const ContactForm = () => {
                     Last Name
                 </Label>
                 <Col md='10'>
+                    <Field className='form-control' name='lastName' placeholder='LastName' />
                 </Col>
             </FormGroup>
             <FormGroup row>
@@ -33,6 +35,7 @@ const ContactForm = () => {
                     Phone
                 </Label>
                 <Col md='10'>
+                    <Field className='form-control' name='phoneNum' placeholder='PhoneNum' />
                 </Col>
             </FormGroup>
             <FormGroup row>
@@ -40,12 +43,23 @@ const ContactForm = () => {
                     Email
                 </Label>
                 <Col md='10'>
+                    <Field className='form-control' name='email' placeholder='Email' />
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label>
+                <Label check md={{ size: 4, offset: 2 }}>
+                    <Field
+                        name='agree'
+                        type='checkbox'
+                        className='form-check-input'
+                    />{' '}
+                    May we contact you?
                 </Label>
                 <Col md='4'>
+                    <Field className='form-control' name='contactType' as='select' >
+                        <option>By Phone</option>
+                        <option>By Email</option>
+                    </Field>
                 </Col>
             </FormGroup>
             <FormGroup row>
@@ -53,12 +67,8 @@ const ContactForm = () => {
                     Your Feedback
                 </Label>
                 <Col md='10'>
+                    <Field className='form-control' name='feedback' as='textarea' rows='12'/>
                 </Col>
-            </FormGroup>
-            <FormGroup row>
-                <Label check md={{ size: 4, offset: 2 }}>
-                    May we contact you?
-                </Label>
             </FormGroup>
         </Form>
     </Formik>
