@@ -17,13 +17,13 @@ export const validateContactForm = (values) => {
 
 
     // Phone
-    const regPh = /^([\(]?)([1]?)([-]?)([\d]{3})([\)]?)([-]?)([\d]{3})([-]?)([\d]{4})$/; //my 9 group approach
+    const regPh = /^([(]?)([1]?)([-]?)([\d]{3})([)]?)([-]?)([\d]{3})([-]?)([\d]{4})$/; //my 9 group approach
     if (!regPh.test(values.phoneNum)) {
         errors.phoneNum = 'The phone number should be formatted as 10-11 digits, area code and prefix optional ';
     }
 
     //Email
-    const regE = /^(\w)+([\.-]?\w+)*(@)([\w]+)([\.-]?\w+)*(\.\w{2,3})+$/;
+    const regE = /^(\w)+([.-]?\w+)*(@)([\w]+)([.-]?\w+)*\.[a-z]{2,3}$/;
     if (!regE.test(values.email)) {
         errors.email = 'Email improperly formated -- please use: xxxxxx@xxxx.xxx';
     }
