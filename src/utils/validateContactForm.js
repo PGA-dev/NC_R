@@ -29,10 +29,10 @@ export const validateContactForm = (values) => {
     }
 
     //Feedback
-    if (!values.feedback) {
+    const regC = /[\S]+/m;
+    if (!regC.test(values.feedback)) {
         errors.feedback = 'Feedback Field Required';
     }
-
 
     return errors;
 };
