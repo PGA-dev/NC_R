@@ -6,9 +6,9 @@ export const validateCommentForm = (values) => {
         errors.rating = 'Slow down Speedy! Please Select a rating: 1-5 ';
     }
 
-    const regA = /^[\S]{2,15}$/;
+    const regA = /^([\S]?[\s\S]{1,14})$/;
     if (!regA.test(values.author)) {
-        errors.author = 'First name is required, and should be 2-15 chars (all chars accepted crazy emoji people)';
+        errors.author = 'Name is required, and should be 2-15 chars (all chars accepted crazy emoji people)';
     }
 
     const regC = /[\S]+/m;
