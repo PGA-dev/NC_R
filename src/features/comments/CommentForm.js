@@ -38,8 +38,8 @@ const CommentForm = ({ campsiteId }) => {
                     }}
                     onSubmit={handleSubmit}
                     validate={validateCommentForm}
-                    >
-                        
+                >
+
                     <Form >
                         <FormGroup>
                             <Label htmlFor="rating">Rating</Label>
@@ -81,10 +81,11 @@ const CommentForm = ({ campsiteId }) => {
                             <ErrorMessage name='commentText'>
                                 {(msg) => <p className='text-danger'>{msg}</p>}
                             </ErrorMessage>
-                            <Button type='submit' color='primary'>
-                                Submit
-                            </Button>
-                        </FormGroup>
+
+                        </FormGroup>                            
+                        <Button type='submit' color='primary'>
+                            Submit
+                        </Button>
                     </Form>
                 </Formik>
             </ModalBody>
