@@ -42,8 +42,8 @@ const UserLoginForm = () => {
                     />
                 </div>
             ) : (
-                <Button 
-                className='m-1'
+                <Button
+                    className='m-1'
                     outline
                     onClick={() => setLoginModalOpen(true)}
                     style={{ color: 'white', border: '2px solid aqua' }}
@@ -63,7 +63,7 @@ const UserLoginForm = () => {
                         onSubmit={handleLogin}
                         validate={validateUserLoginForm}
                     >
-                        <Form style={{ color:'#3046c5'}}>
+                        <Form style={{ color: '#3046c5' }}>
                             <FormGroup>
                                 <Label htmlFor='username'>
                                     UserName
@@ -72,9 +72,8 @@ const UserLoginForm = () => {
                                     id='username'
                                     name='username'
                                     placeholder='Username'
-                                    className='form-control' >
-
-                                </Field>
+                                    className='form-control'
+                                />
                                 <ErrorMessage name='username'>
                                     {(msg) => <p className='text-danger'>{msg}</p>}
                                 </ErrorMessage>
@@ -89,8 +88,7 @@ const UserLoginForm = () => {
                                     name='password'
                                     placeholder='Password'
                                     className='form-control'
-                                >
-                                </Field>
+                                />
                                 <ErrorMessage name='password'>
                                     {(msg) => <p className='text-danger'>{msg}</p>}
                                 </ErrorMessage>
@@ -99,7 +97,6 @@ const UserLoginForm = () => {
                                 Login
                             </Button>
                         </Form>
-
                     </Formik>
                 </ModalBody>
             </Modal>
