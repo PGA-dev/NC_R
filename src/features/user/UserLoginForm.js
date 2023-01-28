@@ -106,8 +106,6 @@ const UserLoginForm = () => {
                 </ModalBody>
             </Modal>
         </span>
-
-
     </>
 };
 
