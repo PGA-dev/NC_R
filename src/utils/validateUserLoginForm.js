@@ -8,9 +8,9 @@ export const validateUserLoginForm = (values) => {
     }
 
 
-    const regP = /^[\S]{8,20}$/;
+    const regP = /^[\S]{8,35}$/;
     if (!regP.test(values.password)) {
-        errors.password = 'Password is required, 8+ characters, no spaces';
+        errors.password = 'Password is required, 8-35 characters, no spaces, anywhere...no spaces...ever';
     }
 
     return errors;
