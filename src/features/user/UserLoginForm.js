@@ -10,7 +10,7 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/img/unicorn.png';
+import defaultAvatar from '../../app/assets/img/profile.png';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 
 const UserLoginForm = () => {
@@ -29,9 +29,7 @@ const UserLoginForm = () => {
 
         dispatch(setCurrentUser(currentUser));
         setLoginModalOpen(false);
-
-
-    }
+    };
 
     return <>
         <span className='navbar-text ml-auto'>

@@ -23,4 +23,4 @@ export const { setCurrentUser } = userSlice.actions;
 
 export const selectCurrentUser = (state) => {
     return state.user.currentUser;
-}
+};
