@@ -27,7 +27,7 @@ export const postComment = createAsyncThunk(
             return Promise.reject('Unable to fetch, status: ' + response.status);
         }
         const data = await response.json();
-        dispatch = addComment(data);
+        dispatch(addComment(data));
     }
 );
 
@@ -56,9 +56,10 @@ const commentsSlice = createSlice({
             state.isLoading = true;
         },
         [fetchComments.fulfilled]: (state, action) => {
+            state.commentsArray = action.payload;
             state.isLoading = false;
             state.errMsg = '';
-            state.commentsArray = action.payload;
+            
         },
         [fetchComments.rejected]: (state, action) => {
             state.isLoading = false;
