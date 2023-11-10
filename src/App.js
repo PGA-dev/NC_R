@@ -2,6 +2,7 @@ import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
+import { Counter } from './features/counter/Counter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
@@ -13,6 +14,7 @@ import { fetchPartners } from './features/partners/partnersSlice';
 import { fetchPromotions } from './features/promotions/promotionsSlice';
 import { fetchComments } from './features/comments/commentsSlice';
 import './App.css';
+
 
 function App() {
     const dispatch = useDispatch();
@@ -36,6 +38,7 @@ function App() {
                     element={<CampsiteDetailPage />}
                 />
             </Routes>
+            <Counter />
             <Footer />
         </div>
     );

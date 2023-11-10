@@ -1,4 +1,4 @@
-export const baseUrl = 'http://localhost:3001/';
+export const baseUrl = 'http://localhost:3005/';
 
 // export const mapImageURL = (arr) => {
 //     return arr.map((item) => {
