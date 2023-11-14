@@ -12,9 +12,9 @@ export const fetchPartners = createAsyncThunk(
             throw new Error('Unable to fetch, status: ' + response.status);
         }
         return await response.json();
-        }catch (error){
-            return Promise.reject('Data Fetch General failure: ' + error.message);
-        }
+    }catch (error){
+        return Promise.reject('Data Fetch General failure: ' + error.message);
+    }
 
     }
 );
