@@ -11,7 +11,8 @@ export const fetchPartners = createAsyncThunk(
         if (!response.ok) {
             throw new Error('Unable to fetch, status: ' + response.status);
         }
-        return await response.json();
+        const data= await response.json();
+        return data;
     }catch (error){
         return Promise.reject('Data Fetch General failure: ' + error.message);
     }
