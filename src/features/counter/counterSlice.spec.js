@@ -3,7 +3,7 @@ import counterReducer, {
   decrement,
   incrementByAmount,
 } from './counterSlice';
-
+//testing for counter...will update other functions periodically
 describe('counter reducer', () => {
   const initialState = {
     value: 3,
