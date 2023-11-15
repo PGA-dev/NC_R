@@ -9,7 +9,7 @@ export const fetchPartners = createAsyncThunk(
         try{
         const response = await fetch(baseUrl + 'partners');
         if (!response.ok) {
-            throw new Error('Unable to fetch, status: ' + response.status);
+            throw new Error('Unable to fetch, status: ' + response.status + response.url);
         }
         const data= await response.json();
         return data;
