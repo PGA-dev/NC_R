@@ -10,8 +10,8 @@ export const fetchPartners = createAsyncThunk(
         if (!response.ok) {
             return Promise.reject('Data Fetch General failure: ' + error.message);
         }
-    const data = await response.json();
-    return data;      
+        const data = await response.json();
+        return data;      
     }
 
 );
