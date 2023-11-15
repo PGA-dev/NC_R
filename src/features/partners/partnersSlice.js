@@ -6,18 +6,14 @@ import { mapImageURL } from '../../utils/mapImageURL';
 export const fetchPartners = createAsyncThunk(
     'partners/fetchPartners',
     async () => {
-        try{
         const response = await fetch(baseUrl + 'partners');
         if (!response.ok) {
-            throw new Error('Unable to fetch, status: ' + response.status + response.url);
+            return Promise.reject('Data Fetch General failure: ' + error.message);
         }
-        const data= await response.json();
-        return data;
-    }catch (error){
-        return Promise.reject('Data Fetch General failure: ' + error.message);
+    const data = await response.json();
+    return data;      
     }
 
-    }
 );
 
 const initialState = {
