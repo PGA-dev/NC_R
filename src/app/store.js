@@ -5,7 +5,7 @@ import { commentsReducer } from '../features/comments/commentsSlice';
 import { partnersReducer } from '../features/partners/partnersSlice';
 import { promotionsReducer} from '../features/promotions/promotionsSlice';
 import { userReducer } from '../features/user/userSlice';
-import { counterSlice } from '../features/counter/counterSlice';
+import { counterReducer, counterSlice } from '../features/counter/counterSlice';
 
 export const store = configureStore({
     reducer: {

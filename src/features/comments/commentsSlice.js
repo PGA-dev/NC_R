@@ -58,7 +58,7 @@ const commentsSlice = createSlice({
         [fetchComments.fulfilled]: (state, action) => {
             state.commentsArray = action.payload;
             state.isLoading = false;
-            state.errMsg = '';
+            // state.errMsg = '';
             
         },
         [fetchComments.rejected]: (state, action) => {

@@ -32,7 +32,7 @@ const partnersSlice = createSlice({
         },
         [fetchPartners.fulfilled]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = '';
+            // state.errMsg = '';
             state.partnersArray = mapImageURL(action.payload);
         },
         [fetchPartners.rejected]: (state, action) => {
